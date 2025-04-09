@@ -1,0 +1,135 @@
+:root{
+  --body-color: #0d0d0d;
+  --color-white: #1a1a1a;
+  --text-color-second: #e0e0e0;
+  --text-color-third: #ff2e63;
+  --first-color: #ff2e63;
+  --first-color-hover: #cc1f4a;
+  --second-color: #800000;
+  --third-color: #b30000;
+  --first-shadow-color: rgba(255, 255, 255, 0.05);
+}
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+  }
+  
+  body {
+    background-color: var(--gray);
+    padding: 40px 20px;
+  }
+  
+  .dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  
+  h1, h2 {
+    color: var(--dark);
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  input, textarea {
+    padding: 10px 15px;
+    border-radius: var(--radius);
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  button {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: var(--secondary);
+  }
+  
+  .post {
+    background: var(--gray);
+    padding: 15px 20px;
+    border-radius: var(--radius);
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .post h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: var(--dark);
+  }
+  
+  .post .date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .post .content {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .post .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .post .actions button {
+    padding: 6px 12px;
+    font-size: 14px;
+    background: #eee;
+    color: #333;
+    border-radius: var(--radius);
+  }
+  
+  .post .actions button:hover {
+    background: var(--primary);
+    color: var(--white);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .dashboard-container {
+      padding: 20px;
+    }
+  
+    button, input, textarea {
+      font-size: 15px;
+    }
+  
+    .post h3 {
+      font-size: 18px;
+    }
+  
+    .post .content {
+      font-size: 14px;
+    }
+  }
+  

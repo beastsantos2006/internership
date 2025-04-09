@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Dashboard | Ludiflex</title>
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet">
+  <!-- --------- FAVICON ---------- -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Blog Dashboard</h1>
+
+    <form id="blogForm">
+      <input type="hidden" id="postId">
+      <input type="text" id="title" placeholder="Title" required>
+      <input type="date" id="date" required>
+      <textarea id="content" placeholder="Content" required></textarea>
+      <button type="submit">Save Post</button>
+    </form>
+
+    <hr>
+
+    <h2>All Blog Posts</h2>
+    <div id="postsContainer"></div>
+  </div>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
